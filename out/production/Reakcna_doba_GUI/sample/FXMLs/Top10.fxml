@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Top10Controller">
+   <children>
+      <ListView layoutX="139.0" layoutY="128.0" prefHeight="258.0" prefWidth="323.0" />
+      <Label layoutX="252.0" layoutY="84.0" text="Top 10 Players" />
+   </children>
+</AnchorPane>

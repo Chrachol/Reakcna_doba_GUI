@@ -3,8 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MenuController">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MenuController">
    <children>
       <Button layoutX="238.0" layoutY="90.0" mnemonicParsing="false" onAction="#play" prefHeight="41.0" prefWidth="125.0" text="PLAY" />
       <Button layoutX="238.0" layoutY="150.0" mnemonicParsing="false" onAction="#newPlayer" prefHeight="41.0" prefWidth="125.0" text="NEW PLAYER" />
