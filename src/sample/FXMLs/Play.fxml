@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.Controllers.PlayController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.PlayController">
+   <children>
+      <Button fx:id="druhe" layoutY="92.0" mnemonicParsing="false" prefHeight="309.0" prefWidth="600.0" text="Button" onAction="#play2" />
+      <Label alignment="CENTER" layoutX="214.0" layoutY="44.0" prefHeight="21.0" prefWidth="173.0" text="ReactBase" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="prve" layoutY="92.0" mnemonicParsing="false" prefHeight="309.0" prefWidth="600.0" text="Button" onAction="#play"/>
+   </children>
 </AnchorPane>

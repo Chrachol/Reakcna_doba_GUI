@@ -14,10 +14,11 @@ public class NewPlayerController {
 
     @FXML
     private TextField playerName;
-
+    public static String menoHraca;
     @FXML
     public void submit(){
         try {
+            menoHraca=playerName.getText();
             Stage stage = (Stage) playerName.getScene().getWindow();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../FXMLs/Menu.fxml"));
             Parent root = loader.load();
