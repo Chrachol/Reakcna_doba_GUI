@@ -15,6 +15,7 @@ public class NewPlayerController {
     @FXML
     private TextField playerName;
     public static String menoHraca;
+
     @FXML
     public void submit(){
         try {
@@ -25,7 +26,7 @@ public class NewPlayerController {
 
             Scene scene = new Scene(root);
 
-            stage.setTitle("MENU");
+            stage.setTitle(menoHraca);
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();

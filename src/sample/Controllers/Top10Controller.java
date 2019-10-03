@@ -5,6 +5,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
+import javafx.scene.control.Menu;
+import sample.Models.CustomComparator;
 import sample.Models.Record;
 
 import java.io.BufferedReader;
@@ -17,30 +19,14 @@ public class Top10Controller implements Initializable {
     @FXML
     private ListView<Record> zoznam;
 
-    private ObservableList<Record>list= FXCollections.observableArrayList();
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        try {
-            ImportRecords();
-        } catch (IOException e) {
-            e.printStackTrace();
+        ObservableList<Record> temp = FXCollections.observableArrayList();
+        for (int i = 0; i < 10; i++){
+            if (i < MenuController.records.size())
+                temp.add(MenuController.records.get(i));
         }
-        zoznam.setItems(list);
-    }
-    public void ImportRecords() throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("F:\\skola\\Reakcna_doba_GUI\\src\\sample\\Files\\Player_ratings.txt"));
-        try {
-            String line;
-            while ((line = br.readLine()) != null){
-                String[] tempArray = line.split(":");
-                list.add(new Record(tempArray[1], Double.parseDouble(tempArray[0])));
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        finally {
-            br.close();
-        }
+        zoznam.setItems(temp);
     }
 }
 
