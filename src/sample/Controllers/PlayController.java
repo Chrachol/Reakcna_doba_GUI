@@ -70,7 +70,7 @@ public class PlayController implements Initializable {
                 case PLAY:
                     state = State.MENU;
                     after = System.currentTimeMillis();
-                    if (after - before > 9999){
+                    if (after - before > 999999){
                         playArea.setBackground(new Background(new BackgroundFill(Color.RED,CornerRadii.EMPTY,Insets.EMPTY)));
                         playArea.setText("PODVADZAL SI KLINI RE ODCHOD DO MENU");
                         cheated = true;
@@ -117,7 +117,7 @@ public class PlayController implements Initializable {
         BufferedWriter bw= null;
         try {
             MenuController.records.sort(new CustomComparator());
-            bw = new BufferedWriter(new FileWriter("D:\\Projects\\Java\\Reakcna_doba_GUI\\src\\sample\\Files\\Player_ratings.txt"));
+            bw = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "/src/sample/Files/Player_ratings.txt"));
             for(Record record : MenuController.records){
                 if (record!=null){
                     bw.write(record.getTime() + ":" + record.getName() + "\n");

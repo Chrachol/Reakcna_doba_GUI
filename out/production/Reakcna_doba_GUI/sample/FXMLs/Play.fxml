@@ -11,7 +11,7 @@
             <Font name="Arial" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="playArea" alignment="CENTER" layoutY="122.0" prefHeight="277.0" prefWidth="600.0" text="STLACTE ENTER AK STE PRIPRAVENY" textAlignment="JUSTIFY">
+      <Label fx:id="playArea" alignment="CENTER" layoutY="122.0" prefHeight="277.0" prefWidth="600.0" text="KLIKNITE AK STE PRIPRAVENY" textAlignment="JUSTIFY">
          <font>
             <Font name="Arial" size="24.0" />
          </font>

@@ -68,7 +68,7 @@ public class MenuController implements Initializable {
     private void importRecords() throws IOException {
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("D:\\Projects\\Java\\Reakcna_doba_GUI\\src\\sample\\Files\\Player_ratings.txt"));
+            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/src/sample/Files/Player_ratings.txt"));
             String line;
             while ((line = br.readLine()) != null){
                 String[] tempArray = line.split(":");
